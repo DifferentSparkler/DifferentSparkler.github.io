@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
-    <link rel="icon" href="https://telegraph-image-yht.pages.dev/file/1cf1bc17a8b651ba88fae.png"><script>
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="[Gmeek](https://github.com/Meekdai/Gmeek)是Meekdai在github上开源的一个博客框架项目，完全基于 Github Pages、Github Issues 和 Github Actions。">
-<meta property="og:title" content="用Gmeek创建轻量级个人博客">
-<meta property="og:description" content="[Gmeek](https://github.com/Meekdai/Gmeek)是Meekdai在github上开源的一个博客框架项目，完全基于 Github Pages、Github Issues 和 Github Actions。">
+<meta name="description" content="测试。">
+<meta property="og:title" content="test">
+<meta property="og:description" content="测试。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://jialikemeng.github.io/post/yong-Gmeek-chuang-jian-qing-liang-ji-ge-ren-bo-ke.html">
-<meta property="og:image" content="https://telegraph-image-yht.pages.dev/file/1cf1bc17a8b651ba88fae.png">
-<title>用Gmeek创建轻量级个人博客</title>
+<meta property="og:url" content="https://DifferentSparkler.github.io/post/test.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>test</title>
 
 
 </head>
@@ -46,15 +46,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">用Gmeek创建轻量级个人博客</h1>
+<h1 class="postTitle">test</h1>
 <div class="title-right">
-    <a href="https://jialikemeng.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="https://DifferentSparkler.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
     </a>
     
-    <a href="https://github.com/JIALIKEMENG/jialikemeng.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/DifferentSparkler/DifferentSparkler.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -70,44 +70,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><a href="https://github.com/Meekdai/Gmeek">Gmeek</a>是Meekdai在github上开源的一个博客框架项目，完全基于 Github Pages、Github Issues 和 Github Actions。不需要本地部署，可以快速创建轻量级个人博客。</p>
-<p>Gmeek 特性：</p>
-<blockquote>
-<ul>
-<li>UI 界面和 Github 同源，只引入了 Github 原生 CSS：primer.style；</li>
-<li>博客写作在 Issues 中完成后，自动触发 Actions 执行部署任务；</li>
-<li>评论系统引入 utteranc.es；</li>
-<li>使用 jinja2 对 html 进行渲染，可通过模板自定义 UI 主题。</li>
-</ul>
-</blockquote>
-<p>创建方法：</p>
-<blockquote>
-<ul>
-<li><strong>注册</strong>申请github账户并<strong>登录</strong>；</li>
-<li>点击<a href="https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai">通过Gmeek模板创建仓库</a>，仓库名称命名为“github用户名.github.io"（用户名这里如果自定义后会成为用户名/自定义.github.io格式），点击<strong>新建仓库</strong>；</li>
-<li>在你创建好的仓库页面，点击设置，<strong>修改</strong>pages—Build and deployment<strong>来源</strong>为Github Actions；</li>
-<li>点击代码，按需<strong>修改</strong>config.json<strong>配置文件</strong>，<strong>保存</strong>修改。config.json配置文件可参考<a href="https://github.com/Meekdai/meekdai.github.io/blob/main/config.json">这里</a>；</li>
-<li>修改配置文件后，点击操作，选择build Gmeek，运行工作流程进行<strong>全局生成</strong>：</li>
-<li>如果全局生成成功，就可以点击议题，点击<strong>创建议题</strong>，来直接写博客了。写完后别忘了<strong>加一个标签</strong>（可自定义）。</li>
-</ul>
-</blockquote>
-<p>至此，你的博客已经顺利创建并有了一篇博客文字。可以直接通过创建仓库时的仓库名”github用户名.github.io“来访问了。</p>
-<p><a href="https://jialikemeng.github.io/" rel="nofollow">示例博客</a></p>
-<p>详细创建方法及存在问题处理参看：<a href="https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html" rel="nofollow">Gmeek快速上手<br>
-</a></p></div>
-<div style="font-size:small;margin-top:8px;float:right;">转载文章请注明出处，谢谢!</div>
+<div class="markdown-body" id="postBody"><p>测试</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 </div>
-    <div id="footer">Copyright © <span id="year"></span><a href="https://jialikemeng.github.io"> 37uncle </a>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://DifferentSparkler.github.io"> Blog Title </a>
 <p>
 <span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
 </p>
 
 <script>
-if("01/29/2024"!=""){
+if(""!=""){
     var now=new Date();
-    var startSite=new Date("01/29/2024");
+    var startSite=new Date("");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
@@ -146,7 +122,7 @@ function utterancesTheme(theme){
     iframe.contentWindow.postMessage(message,'https://utteranc.es');
 }
 if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
-console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
 </script>
 
 <script>
@@ -163,7 +139,7 @@ function openComments(){
 
     script=document.createElement("script");
     script.setAttribute("src","https://utteranc.es/client.js");
-    script.setAttribute("repo","JIALIKEMENG/jialikemeng.github.io");
+    script.setAttribute("repo","DifferentSparkler/DifferentSparkler.github.io");
     script.setAttribute("issue-term","title");
     
     if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
